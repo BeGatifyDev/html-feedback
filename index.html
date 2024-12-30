@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | MakeMoneyMediaStudio</title>
+    <link rel="icon" type="image/png" href="./assets/logommm.PNG">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="./assets/logommm.PNG" alt="MakeMoneyMediaStudio Logo">
+        <h1>Thank You for Supporting MakeMoneyMediaStudio!</h1>
+        <p>We deeply appreciate your love and dedication to our content in 2024. Here's to more amazing moments together!</p>
+    </header>
+
+    <main class="content">
+        <section class="slider">
+            <h2>2024 Video Catalogue</h2>
+            <p>Click on a video thumbnail to watch!</p>
+            <div class="slider-container">
+                <!-- Slider Items -->
+                <div class="slider-item">
+                    <img src="https://img.youtube.com/vi/ZLofJWtspyA/0.jpg" alt="Unfiltered Thumbnail" class="video-thumbnail" data-video-id="ZLofJWtspyA">
+                    <h3>Unfiltered</h3>
+                </div>
+                <div class="slider-item">
+                    <img src="https://img.youtube.com/vi/4_Wz3LY4xDs/0.jpg" alt="Unfiltered Thumbnail" class="video-thumbnail" data-video-id="4_Wz3LY4xDs">
+                    <h3>Unfiltered</h3>
+                </div>
+                <div class="slider-item">
+                    <img src="https://img.youtube.com/vi/CPVtTCNmeko/0.jpg" alt="Mic Master Thumbnail" class="video-thumbnail" data-video-id="CPVtTCNmeko">
+                    <h3>Mic Master</h3>
+                </div>
+                <div class="slider-item">
+                    <img src="https://img.youtube.com/vi/KEC_7Wbevzk/0.jpg" alt="Yarns and Trends Thumbnail" class="video-thumbnail" data-video-id="KEC_7Wbevzk">
+                    <h3>Yarns and Trends</h3>
+                </div>
+                <div class="slider-item">
+                    <img src="https://img.youtube.com/vi/OK4RQWe4iHE/0.jpg" alt="Love on the Street Thumbnail" class="video-thumbnail" data-video-id="OK4RQWe4iHE">
+                    <h3>Love on the Street</h3>
+                </div>
+                <div class="slider-item">
+                    <img src="https://img.youtube.com/vi/qHecFrdy7k0/0.jpg" alt="Street Vibes Thumbnail" class="video-thumbnail" data-video-id="qHecFrdy7k0">
+                    <h3>Street Vibes</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <h2>We Value Your Feedback</h2>
+            <p>If you have any reviews, feedback, or comments, please let us know! Your thoughts help us improve.</p>
+            <form class="feedback-form" action="mailto:makemoneymedia89@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Feedback:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your feedback here..." required></textarea>
+
+                <button type="submit">Send Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p><i>&copy; 2024 MakeMoneyMediaStudio. All Rights Reserved.</i></p>
+    </footer>
+
+    <!-- Modal for video -->
+    <div id="videoModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <iframe id="videoIframe" width="800" height="450" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
