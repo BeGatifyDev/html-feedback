@@ -76,11 +76,25 @@ a:hover {
     transform: scale(1.05);
 }
 
+/* Blinking Effect for h3 */
 .slider-item h3 {
     font-size: 1.2rem;
-    color: #00bfff;
+    color: #ff6347; /* New color for h3 */
     margin-top: 15px;
     font-family: 'Helvetica Neue', sans-serif;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Feedback Section */
@@ -197,7 +211,36 @@ a:hover {
         flex-direction: column;
         gap: 10px;
     }
+
     .slider-item {
         width: 100%;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .slider-item h3 {
+        font-size: 1rem;
+    }
+
+    .feedback {
+        padding: 20px;
+    }
+
+    .feedback h2 {
+        font-size: 1.5rem;
+    }
+
+    .feedback-form button {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
     }
 }
