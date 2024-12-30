@@ -1,115 +1,112 @@
 /* Global Styles */
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    font-family: "Arial", sans-serif;
-    background: linear-gradient(135deg, #4c4c4c, #121212);
-    color: #ffffff;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #1E2A38; /* Dark Blue */
+    color: white;
     text-align: center;
-    line-height: 1.6;
-    overflow-x: hidden;
+    padding: 40px 20px;
 }
 
-a {
-    color: #00bfff;
-    text-decoration: none;
+header img {
+    max-width: 120px;
+    height: auto;
 }
 
-a:hover {
-    text-decoration: underline;
+header h1 {
+    font-size: 1.5rem;
+    color: #FF6F61;  /* Professional coral for the header */
+    margin-top: 15px;
 }
 
-/* Header Styles */
-.header {
-    background: #333333;
-    padding: 40px;
-    border-bottom: 5px solid #00bfff;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
-.logo {
-    width: 120px;
-    margin-bottom: 20px;
+.content {
+    padding: 30px;
+    background-color: #fff;
 }
 
-.header h1 {
-    font-size: 1.0rem;
-    color: #00bfff;
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: 10px 0;
-}
-
-.header p {
-    font-size: 2.0rem;
-    margin: 0;
-    color: #bbb;
-}
-
-/* Slider Styles */
 .slider {
-    position: relative;
-    margin: 40px auto;
-    max-width: 900px;
-    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .slider-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .slider-item {
+    width: 20%;
+    max-width: 220px;
     text-align: center;
-    width: 180px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
 
 .slider-item img {
     width: 100%;
     border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.slider-item img:hover {
+.slider-item h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Hover effect for slider items */
+.slider-item:hover {
     transform: scale(1.05);
 }
 
-/* Blinking Effect for h3 */
-.slider-item h3 {
+/* Watch More Button */
+.watch-more {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.watch-more-btn {
+    padding: 15px 30px;
+    background-color: #2C6B8D;
+    color: white;
+    border: none;
     font-size: 1.2rem;
-    color: #ff6347; /* New color for h3 */
-    margin-top: 15px;
-    font-family: 'Helvetica Neue', sans-serif;
-    animation: blink 1s infinite alternate;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
+.watch-more-btn:hover {
+    background-color: #1E3A8A;
 }
 
-/* Feedback Section */
+/* Feedback Form */
 .feedback {
-    margin: 30px auto;
-    max-width: 600px;
+    background-color: #f9f9f9;
     padding: 30px;
-    background: #333333;
     border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
 }
 
 .feedback h2 {
-    font-size: 2rem;
-    color: #00bfff;
+    font-size: 1.8rem;
+    color: #1E2A38;
     margin-bottom: 20px;
 }
 
@@ -120,127 +117,96 @@ a:hover {
 }
 
 .feedback-form label {
-    font-size: 1rem;
-    text-align: left;
-    margin-bottom: 5px;
-    color: #bbb;
+    font-size: 1.1rem;
 }
 
 .feedback-form input,
 .feedback-form textarea {
-    width: 100%;
     padding: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background: #1e1e1e;
-    color: #fff;
     font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
 }
 
 .feedback-form button {
     padding: 12px 25px;
-    border: none;
-    background: #00bfff;
-    color: #fff;
+    background-color: #FF6F61;
+    color: white;
     font-size: 1.1rem;
-    cursor: pointer;
+    border: none;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .feedback-form button:hover {
-    background: #007acc;
+    background-color: #2C6B8D;
 }
 
-/* Footer Styles */
+/* Footer */
 .footer {
-    background: #333333;
-    padding: 20px;
+    background-color: #1E2A38;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
     margin-top: 40px;
-    color: #bbb;
 }
 
-.footer p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-/* Modal Styles */
+/* Modal */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .modal-content {
-    background-color: #333;
-    border-radius: 10px;
+    background-color: white;
     padding: 20px;
-    max-width: 90%;
+    border-radius: 10px;
 }
 
-.close {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+.modal iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.modal .close {
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 10px;
+    font-size: 2rem;
+    color: #333;
     cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-    color: #00bfff;
-    text-decoration: none;
-    cursor: pointer;
-}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
 
-/* Responsive Styles */
-@media only screen and (max-width: 768px) {
     .slider-container {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 
     .slider-item {
-        width: 100%;
-    }
-
-    .header h1 {
-        font-size: 2rem;
-    }
-
-    .header p {
-        font-size: 1rem;
-    }
-
-    .slider-item h3 {
-        font-size: 1rem;
-    }
-
-    .feedback {
-        padding: 20px;
-    }
-
-    .feedback h2 {
-        font-size: 1.5rem;
-    }
-
-    .feedback-form button {
-        font-size: 1rem;
+        width: 80%;
     }
 
     .footer {
         font-size: 0.8rem;
+    }
+
+    .feedback-form button {
+        padding: 10px 20px;
     }
 }
